@@ -17,6 +17,7 @@
         <script src="_static/doctools.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Modules" href="modules.html" />
@@ -38,18 +39,29 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Researchers</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Users</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="setup_env.html">Setting Up Environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Developers</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Documentation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#definitions-and-conventions">Definitions and Conventions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#geographical-map-projection">Geographical Map Projection</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="modules.html">Modules</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Community</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact Us</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CHANGELOG.html">Changelog</a></li>
 </ul>
 
@@ -103,7 +115,28 @@
 </style>
 <section id="documentation">
 <h1>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline"></a></h1>
-<p>TBD</p>
+<section id="definitions-and-conventions">
+<h2>Definitions and Conventions<a class="headerlink" href="#definitions-and-conventions" title="Permalink to this headline"></a></h2>
+<section id="geographical-map-projection">
+<h3>Geographical Map Projection<a class="headerlink" href="#geographical-map-projection" title="Permalink to this headline"></a></h3>
+<p>In this package, we follow two conventions for positioning location, including World Geodetic System (WGS84, EPSG:4326) standard and (WGS84, EPSG:3395). Both projections are using WGS84. Here is a summary of these systems and projections.</p>
+<p><strong>EPSG:4326</strong></p>
+<p>This projection is based on latitude and longitude, which is the common projection that is used in daily GPS applications. Read more: <a class="reference external" href="https://epsg.io/4326">epsg.io/4326.</a></p>
+<ul class="simple">
+<li><p>Unit: degree</p></li>
+<li><p>Scope: Used by GPS satellite navigation system.</p></li>
+<li><p>Bounds: Lat: -90:90, Lon: -180:180</p></li>
+</ul>
+<p><strong>EPSG:3395</strong></p>
+<p>This projection is used for very small scale mapping. Read more: <a class="reference external" href="https://epsg.io/3395">epsg.io/3395.</a></p>
+<ul class="simple">
+<li><p>Unit: meter</p></li>
+<li><p>Scope: Small scale mapping</p></li>
+<li><p>Projection bounds: Lat: -15496570.74:18764656.23, Lon -20026376.39:20026376.39 (based on Lat:-80.0:84, Lon:-180:180)</p></li>
+</ul>
+<p>[TODO: Add graphical representation.]</p>
+</section>
+</section>
 </section>
 
 
