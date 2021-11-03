@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Changelog &mdash; nsaphx 0.0.1 documentation</title>
+  <title>Development Environment &mdash; nsaphx 0.0.1 documentation</title>
   
 
   
@@ -40,7 +40,8 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Contact Us" href="contact.html" /> 
+    <link rel="next" title="Documentation" href="documentation.html" />
+    <link rel="prev" title="Quickstart" href="quickstart.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -94,24 +95,22 @@
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Developers</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="setup_dev_env.html">Development Environment</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Development Environment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-a-new-environment">Setting up a new environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#updating-an-existing-environment">Updating an existing environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-nsaphx">Installing nsaphx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#registering-the-kernel">Registering the kernel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#updating-the-environment-recipe">Updating the environment recipe</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="documentation.html">Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules.html">Modules</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Community</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">Contact Us</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Changelog</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#unreleased">[Unreleased]</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#added">Added</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#changed">Changed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#fixed">Fixed</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#removed">Removed</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="CHANGELOG.html">Changelog</a></li>
 </ul>
 
             
@@ -157,13 +156,13 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Changelog</li>
+      <li>Development Environment</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/CHANGELOG.md.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/setup_dev_env.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -200,22 +199,45 @@
     text-align: unset;
 }
 </style>
-<section id="changelog">
-<h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h1>
-<section id="unreleased">
-<h2>[Unreleased]<a class="headerlink" href="#unreleased" title="Permalink to this headline">¶</a></h2>
-<section id="added">
-<h3>Added<a class="headerlink" href="#added" title="Permalink to this headline">¶</a></h3>
+<section id="development-environment">
+<h1>Development Environment<a class="headerlink" href="#development-environment" title="Permalink to this headline">¶</a></h1>
+<p>The development environment requires some extra packages to support documentation. <cite>nsaphx</cite> package can be installed in any environment with Python 3.7 or higher. Please download the package from the <a class="reference external" href="https://github.com/fasrc/nsaphx">nsaphx</a> Github repository.  Anaconda virtual environment is highly recommended. Please make sure that you have <a class="reference external" href="https://docs.anaconda.com/anaconda/install/index.html">anaconda</a> installed on your system. You can also install <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a>, which is the lightweight version of anaconda.</p>
+<section id="setting-up-a-new-environment">
+<h2>Setting up a new environment<a class="headerlink" href="#setting-up-a-new-environment" title="Permalink to this headline">¶</a></h2>
+<p>If you have not set up nsaphx development environment, you can use the following command to create a new environment and install dependencies.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda env create --name your_env_name --file environment_dev.yml
+</pre></div>
+</div>
 </section>
-<section id="changed">
-<h3>Changed<a class="headerlink" href="#changed" title="Permalink to this headline">¶</a></h3>
+<section id="updating-an-existing-environment">
+<h2>Updating an existing environment<a class="headerlink" href="#updating-an-existing-environment" title="Permalink to this headline">¶</a></h2>
+<p>If you want to make sure that the environment is the latest version, you can update the environment using the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda env update --name your_env_name --file environment_dev.yml
+</pre></div>
+</div>
 </section>
-<section id="fixed">
-<h3>Fixed<a class="headerlink" href="#fixed" title="Permalink to this headline">¶</a></h3>
+<section id="installing-nsaphx">
+<h2>Installing nsaphx<a class="headerlink" href="#installing-nsaphx" title="Permalink to this headline">¶</a></h2>
+<p>Navigate into the package folder and run the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip3 install -e .
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">-e</span></code> flag installs the package in development mode. As a result, you do not need to reintall the package by chaning the code.</p>
 </section>
-<section id="removed">
-<h3>Removed<a class="headerlink" href="#removed" title="Permalink to this headline">¶</a></h3>
+<section id="registering-the-kernel">
+<h2>Registering the kernel<a class="headerlink" href="#registering-the-kernel" title="Permalink to this headline">¶</a></h2>
+<p>If you plan on testing the package using Jupyter Notebook, you need to register the package using the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python3 -m ipykernel install --user --name your_venv_name
+</pre></div>
+</div>
 </section>
+<section id="updating-the-environment-recipe">
+<h2>Updating the environment recipe<a class="headerlink" href="#updating-the-environment-recipe" title="Permalink to this headline">¶</a></h2>
+<p>If you added a new feature to the package that is unavailable in the current environment, you need to update the environment recipe, while environment is activated, using the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda env <span class="nb">export</span> &gt; environment_dev.yml
+</pre></div>
+</div>
+<p>Make sure to manually remove <cite>name</cite> and <cite>prefix</cite> sections as well as <cite>nsaphx</cite> from the dependencies section in the <cite>.yml</cite> file.</p>
 </section>
 </section>
 
@@ -227,8 +249,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="documentation.html" class="btn btn-neutral float-right" title="Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="contact.html" class="btn btn-neutral float-left" title="Contact Us" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="quickstart.html" class="btn btn-neutral float-left" title="Quickstart" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

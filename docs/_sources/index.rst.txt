@@ -24,7 +24,8 @@ nsaphx
    :glob:
    :maxdepth: 2
    :caption: Developers
-
+   
+   setup_dev_env
    documentation
    modules
 

@@ -4,8 +4,8 @@ Documentation
 Definitions and Conventions
 ---------------------------
 
-Geographical Map Projection
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Geodetic Map Projection
+^^^^^^^^^^^^^^^^^^^^^^^
 
 In this package, we follow two conventions for positioning location, including World Geodetic System (WGS84, EPSG:4326) standard and (WGS84, EPSG:3395). Both projections are using WGS84. Here is a summary of these systems and projections.
 
